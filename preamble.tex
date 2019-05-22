@@ -1,0 +1,73 @@
+\documentclass[a4paper,twoside,10pt]{article}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\interfootnotelinepenalty=10000
+\usepackage[USenglish]{babel} %francais, polish, spanish, ...
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{multirow, booktabs}
+\usepackage{hyperref}
+% \usepackage[hypertex]{hyperref}
+\usepackage{lscape}
+%\usepackage{comments}
+\usepackage{eufrak}
+
+\usepackage{lmodern} %Type1-font for non-english texts and characters
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{mnsymbol}
+
+%% Packages for Graphics & Figures %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx} %%For loading graphic files
+\usepackage{amsmath}
+\usepackage{amsthm} 
+\usepackage{thmtools}
+\usepackage{amsfonts}
+\usepackage[all,cmtip]{xy}
+\usepackage{longtable}
+%\usepackage{tikz}
+%\usepackage{geometry}
+
+%\usepackage{TechFront}
+%\declaretheorem{Lemma}
+%\declaretheorem{prop}
+
+\newcommand{\lre}{\color{red}{\{}}
+
+\newcommand{\so}{\smashoperator}
+\newcommand{\mi}{\mathit}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mult}{\multicolumn}
+\newcommand{\false}{\texttt{false}}
+\newcommand{\true}{\texttt{true}}
+\newcommand{\nul}{\texttt{null}}
+\newcommand{\ve}{\mathbf}
+\newcommand\red[1]{\textcolor{red}{#1}}
+\newcommand\blue[1]{\textcolor{blue}{#1}}
+\newcommand{\set}[2]{\{\;{#1}\;|\;{#2}\;\}}
+\newcommand{\odef}{\overset{\text{def.}}=}
+\algdef{SE}[DOWHILE]{Do}{doWhile}{\algorithmicdo}[1]{\algorithmicwhile\ #1}%
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\StateInd}{\State\hspace{\algorithmicindent}}
+\newcommand{\pr}{\mathit{PR}}
+\newcommand{\prs}{\mathit{PRS}}
+\newcommand{\ens}{\Leftrightarrow}
+\newcommand{\rarr}{\rightarrow}
+\newcommand{\ttt}{\texttt}
+
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+%\newtheorem{example}{Example}[section]
+\newtheorem*{theorem}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem{examplex}{Example}[section]
+\newenvironment{example}
+  {\pushQED{\qed}\renewcommand{\qedsymbol}{$\triangle$}\examplex}
+  {\popQED\endexamplex}
+	
